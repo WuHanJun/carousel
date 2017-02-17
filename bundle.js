@@ -393,38 +393,56 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//��ʼ������
 var crtIdx = (0, _jquery2.default)('#slides').carousel({
     width: 920,
     height: 400,
     autoplay: true,
-    speed: 10,
+    speed: 100,
     mouseenter: 'on'
 }); /**
      * Created by lenovo on 2017/2/17.
      */
 
 
-(0, _jquery2.default)('.single-control li:first-child a').html('<img src="http://zegendary.coding.me/project/project/high%20bigger%20slides/img/thumb_macbook.png" alt="thumbnail">');
-(0, _jquery2.default)('.single-control li:nth-child(2) a').html('<img src="http://zegendary.coding.me/project/project/high%20bigger%20slides/img/thumb_macbook.png" alt="thumbnail">');
-(0, _jquery2.default)('.single-control li:nth-child(3) a').html('<img src="http://zegendary.coding.me/project/project/high%20bigger%20slides/img/thumb_macbook.png" alt="thumbnail">');
-(0, _jquery2.default)('.single-control li:nth-child(4) a').html('<img src="http://zegendary.coding.me/project/project/high%20bigger%20slides/img/thumb_macbook.png" alt="thumbnail">');
-(0, _jquery2.default)('.direction-control').remove();
+var handle = {
+    //�����ڵ�
+    createElements: function createElements() {
+        (0, _jquery2.default)('.single-control li:first-child a').html('<img src="./dist/image/thumb_macbook.png" alt="thumbnail">');
+        (0, _jquery2.default)('.single-control li:nth-child(2) a').html('<img src="./dist/image/thumb_iphone.png" alt="thumbnail">');
+        (0, _jquery2.default)('.single-control li:nth-child(3) a').html('<img src="./dist/image/thumb_imac.png" alt="thumbnail">');
+        (0, _jquery2.default)('.single-control li:nth-child(4) a').html('<img src="./dist/image/thumb_about.png" alt="thumbnail">');
+    },
+    //�¼�����
+    bind: function bind() {
+        (0, _jquery2.default)('.single-control').on('click', 'li', function () {
+            var _this = (0, _jquery2.default)(this);
+            _this.addClass('active');
+            _this.siblings().removeClass('active');
+        });
+    },
+    //Сͼ���Զ����沥��
+    autoFollow: function autoFollow() {
+        setInterval(function () {
+            (0, _jquery2.default)('.carouselContainer .img-ct img').each(function () {
 
-(0, _jquery2.default)('.single-control li:first-child').addClass('active');
-
-(0, _jquery2.default)('.single-control').on('click', 'li', function () {
-    (0, _jquery2.default)(this).addClass('active');
-    (0, _jquery2.default)(this).siblings().removeClass('active');
-});
-setInterval(function () {
-    (0, _jquery2.default)('.carouselContainer .img-ct img').each(function () {
-        if ((0, _jquery2.default)(this).css('display') === 'block') {
-            var idx = (0, _jquery2.default)(this).index();
-            (0, _jquery2.default)('.single-control li').eq(idx).addClass('active');
-            (0, _jquery2.default)('.single-control li').eq(idx).siblings().removeClass('active');
-        }
-    });
-}, 3);
+                if ((0, _jquery2.default)(this).data('show') === true) {
+                    var idx = (0, _jquery2.default)(this).index();
+                    (0, _jquery2.default)('.single-control li').eq(idx).addClass('active');
+                    (0, _jquery2.default)('.single-control li').eq(idx).siblings().removeClass('active');
+                }
+            });
+        }, 10);
+    },
+    init: function init() {
+        this.createElements();
+        (0, _jquery2.default)('.direction-control').remove(); //�Ƴ�ǰ�����˰�ť
+        (0, _jquery2.default)('.single-control li:first-child').addClass('active');
+        this.bind();
+        this.autoFollow();
+    }
+};
+handle.init();
 
 /***/ }),
 /* 4 */
@@ -551,7 +569,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             isAnimate = true;
             fade(idx);
             crtIdx = idx;
+            set(crtIdx);
         }
+        function set() {
+            $('.img-ct img').eq(0).data('show', true);
+            var temp = 0;
+            if (temp !== crtIdx) {
+                temp = crtIdx;
+                $('.img-ct img').eq(temp).siblings().data('show', false);
+                $('.img-ct img').eq(temp).data('show', true);
+            } else {
+                console.log(temp);
+                $('.img-ct img').eq(temp).siblings().data('show', false);
+                $('.img-ct img').eq(temp).data('show', true);
+            }
+        }
+
         //��������
         function fade(idx) {
             $items.eq(crtIdx).fadeOut(speed);

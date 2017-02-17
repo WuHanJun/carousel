@@ -117,7 +117,21 @@ import $ from 'jquery';
             isAnimate = true;
             fade(idx);
             crtIdx = idx;
+            set(crtIdx);
         }
+        function set () {
+            $('.img-ct img').eq(0).data('show', true);
+            var temp = 0;
+            if(temp !== crtIdx) {
+                temp = crtIdx;
+                $('.img-ct img').eq(temp).siblings().data('show', false);
+                $('.img-ct img').eq(temp).data('show', true);
+            } else {
+                $('.img-ct img').eq(temp).siblings().data('show', false);
+                $('.img-ct img').eq(temp).data('show', true);
+            }
+        }
+
         // Û±ÍΩ¯»Î
         function fade(idx) {
             $items.eq(crtIdx).fadeOut(speed);
