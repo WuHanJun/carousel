@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 15);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -695,7 +695,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "body{\r\n    height: 100%;\r\n    overflow: hidden;\r\n    color:#444444;\r\n    font-size:13px;\r\n    background: #f2f2f2;\r\n    font-family:Arial, Helvetica, sans-serif;\r\n}\r\nmain{\r\n    /* The main container */\r\n    margin:15px auto;\r\n    width:920px;\r\n    position:relative;\r\n\r\n}\r\n#slides-wrap {\r\n    border: 1px solid white;\r\n    height: 446px;\r\n    border-bottom-right-radius: 4px;\r\n    border-bottom-left-radius: 4px;\r\n    background: url(http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/panel.jpg) repeat-x bottom center #ffffff;\r\n}\r\nmain h1{ font-family: \"Myriad Pro\",Arial,Helvetica,sans-serif;\r\n    font-size: 42px;\r\n    font-weight: normal;\r\n    padding: 35px;\r\n    text-align: center;\r\n}\r\nmain h2{\r\n    font-family: \"Myriad Pro\",Arial,Helvetica,sans-serif;\r\n    font-size: 16px;\r\n    font-weight: normal;\r\n    margin-bottom: 10px;\r\n    position: relative;\r\n    top: -19px;\r\n    text-align: center;\r\n}\r\n.single-control {\r\n    position: absolute;\r\n    left: 50%;\r\n    margin-left: -120px;\r\n}\r\n.single-control li{\r\n    float: left;\r\n    width: 60px;\r\n    height: 45px;\r\n    background: url(\"http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/divider.png\") no-repeat right;\r\n    text-align: center;\r\n}\r\n.single-control li a{\r\n    padding-top: 10px;\r\n    display: block;\r\n}\r\n.single-control li:hover {\r\n    background: url(\"http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/pic_bg.png\"), repeat;\r\n}\r\n.single-control li.active {\r\n    background: url('http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/active_bg.png') no-repeat;\r\n}\r\n.single-control:after {\r\n    display: block;\r\n    content: '';\r\n    clear: both;\r\n}\r\nfooter {\r\n    margin:18px auto 0;\r\n    width:920px;\r\n    text-align: center;\r\n}\r\nfooter p:first-child {\r\n    margin-bottom: 8px;\r\n}\r\nfooter p:last-child {\r\n    font-size: 12px;\r\n    margin-bottom: 10px;\r\n}", ""]);
+exports.push([module.i, "body{\r\n    height: 100%;\r\n    overflow: hidden;\r\n    color:#444444;\r\n    font-size:13px;\r\n    background: #f2f2f2;\r\n    font-family:Arial, Helvetica, sans-serif;\r\n}\r\nmain{\r\n    /* The main container */\r\n    margin:15px auto;\r\n    width:920px;\r\n    position:relative;\r\n\r\n}\r\n#slides-wrap {\r\n    border: 1px solid white;\r\n    height: 446px;\r\n    border-bottom-right-radius: 4px;\r\n    border-bottom-left-radius: 4px;\r\n    background: url(" + __webpack_require__(13) + ") repeat-x bottom center #ffffff;\r\n}\r\nmain h1{ font-family: \"Myriad Pro\",Arial,Helvetica,sans-serif;\r\n    font-size: 42px;\r\n    font-weight: normal;\r\n    padding: 35px;\r\n    text-align: center;\r\n}\r\nmain h2{\r\n    font-family: \"Myriad Pro\",Arial,Helvetica,sans-serif;\r\n    font-size: 16px;\r\n    font-weight: normal;\r\n    margin-bottom: 10px;\r\n    position: relative;\r\n    top: -19px;\r\n    text-align: center;\r\n}\r\n.single-control {\r\n    position: absolute;\r\n    left: 50%;\r\n    margin-left: -120px;\r\n}\r\n.single-control li{\r\n    float: left;\r\n    width: 60px;\r\n    height: 45px;\r\n    background: url(" + __webpack_require__(12) + ") no-repeat right;\r\n    text-align: center;\r\n}\r\n.single-control li a{\r\n    padding-top: 10px;\r\n    display: block;\r\n}\r\n.single-control li:hover {\r\n    background: url(" + __webpack_require__(14) + "), repeat;\r\n}\r\n.single-control li.active {\r\n    background: url(" + __webpack_require__(11) + ") no-repeat;\r\n}\r\n.single-control:after {\r\n    display: block;\r\n    content: '';\r\n    clear: both;\r\n}\r\nfooter {\r\n    margin:18px auto 0;\r\n    width:920px;\r\n    text-align: center;\r\n}\r\nfooter p:first-child {\r\n    margin-bottom: 8px;\r\n}\r\nfooter p:last-child {\r\n    font-size: 12px;\r\n    margin-bottom: 10px;\r\n}", ""]);
 
 // exports
 
@@ -716,6 +716,30 @@ exports.push([module.i, "/*! normalize.css v5.0.0 | MIT License | github.com/nec
 
 /***/ }),
 /* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./font/active_bg.png";
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAtBAMAAAB2Yqf0AAAAFVBMVEX+/v7W1tbe3t7g4ODb29vZ2dnY2NgxqpXPAAAAGElEQVQI12MwQIEKGNABBQbAYQIcCmCHAI5JCGGR4XxuAAAAAElFTkSuQmCC"
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "./font/panel.jpg";
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFAQMAAAC3obSmAAAAA1BMVEX///+nxBvIAAAAAXRSTlNZUlExNgAAAApJREFUCNdjgAMAAAoAAWkGOTIAAAAASUVORK5CYII="
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
