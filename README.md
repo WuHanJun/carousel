@@ -1,3 +1,4 @@
+
 [轮播应用](https://wuhanjun.github.io/carousel/index.html)
 
 [渐变轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-1.html)
@@ -15,7 +16,6 @@
 [立即执行函数封装](https://wuhanjun.github.io/Learing-Task/otherCarousel/immediately-function.html)
 
 [构造函数轮播封装](https://wuhanjun.github.io/Learing-Task/Object&&Prototype/carousel.html#)
-
 
 ## 初衷：
 
