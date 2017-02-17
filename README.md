@@ -5,7 +5,7 @@
 
 [渐变多轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-2.html)
 
-[思路四clone节点轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-3.1.html)
+[第四种思路clone节点轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-3.1.html)
 
 [全屏轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-4Fullpage2.html)
 
