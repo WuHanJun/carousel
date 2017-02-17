@@ -1,5 +1,5 @@
 
-[轮播应用](https://wuhanjun.github.io/carousel/index.html)
+[轮播应用，我是小作品哟，打开我呀。](https://wuhanjun.github.io/carousel/index.html)
 
 [第四种思路clone节点轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-3.1.html)
 
