@@ -1,39 +1,57 @@
+[轮播应用](https://wuhanjun.github.io/carousel/index.html)
+
+[渐变轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-1.html)
+
+[渐变多轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-2.html)
+
+[思路四clone节点轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-3.1.html)
+
+[全屏轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-4Fullpage2.html)
+
+[函数封装](https://wuhanjun.github.io/Learing-Task/otherCarousel/function)
+
+[对象封装](https://wuhanjun.github.io/Learing-Task/otherCarousel/object.html)
+
+[立即执行函数封装](https://wuhanjun.github.io/Learing-Task/otherCarousel/immediately-function.html)
+
+[构造函数轮播封装](https://wuhanjun.github.io/Learing-Task/Object&&Prototype/carousel.html#)
+
+
 ## 初衷：
 
 网上轮播插件较多，但工作中各种应用场景也多，为响应需求，方便自己故自造轮子。
 
 ## 思路：
+
 这两种只是属性在变化：
-第一种：图片排成一列，父容器margin-left或者绝对定位来移动。判断放到最后一张的时候，判断放到第一张的时候整个容器回来
+### 第一种：
+图片排成一列，父容器margin-left或者绝对定位来移动。判断放到最后一张的时候，判断放到第一张的时候整个容器回来
 缺点：最后一张和第一张的时候会看到途中所有图片(100张怎么办)。
 
-第二种：上面放左中右三张图片，左右两张为hidden看不见。还有一张放下面，当滚动的时候，将下面的这张放到后面或前面(对应前滚和后滚)。
+### 第二种：
+上面放左中右三张图片，左右两张为hidden看不见。还有一张放下面，当滚动的时候，将下面的这张放到后面或前面(对应前滚和后滚)。
 缺点： 当用户从第一张跳到第四张的时候，无法操作，因为下面只有一张牌。
 
 下面这第三种的缺点就是DOM一直在变化，如果是自动轮播的话较为损耗性能:
-第三种： 往右滑先滚再拿，往左滑先拿在滚。(这是有原因的，初始的时候如下所示，往左滑的时候必须先拿一张放前面然后滚动，往右滑的时候只能先往右滑再拿，因为刚开始第一张的左边还没有。)     x永远在第一个。
+### 第三种： 
+往右滑先滚再拿，往左滑先拿在滚。(这是有原因的，初始的时候如下所示，往左滑的时候必须先拿一张放前面然后滚动，往右滑的时候只能先往右滑再拿，因为刚开始第一张的左边还没有。)     x永远在第一个。
+
 ```
 初始条件：
 x
 1 2 3 4
 ```
 
-第四种： 针对第三种进行优化(注意区别很大，这个是父元素position(或margin-left)马上变化，第三种是父元素(属性)和子元素(节点位置)都发生变化)，在最左边和最右边clone节点。判断位置为最左或者最右边的时候，父元素position瞬间发生变化对应向左和向右，人眼看不出来。
+### 第四种：
 
-第五种： 淡入淡出渐变轮播。图片绝对定位，通过jQuery API实现。
+针对第三种进行优化(注意区别很大，这个是父元素position(或margin-left)马上变化，第三种是父元素(属性)和子元素(节点位置)都发生变化)，在最左边和最右边clone节点。判断位置为最左或者最右边的时候，父元素position瞬间发生变化对应向左和向右，人眼看不出来。
 
-第六种： CSS3实现轮播，很好奇。有时间了看看。
-## 实现
-[carousel](https://wuhanjun.github.io/carousel/index.html)
-[渐变轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-1.html)
-[渐变多轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-2.html)
-[思路四clone节点轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-3.1.html)
-[全屏轮播](https://wuhanjun.github.io/Learing-Task/27-jQuery%E8%BD%AE%E6%92%AD/27Carousel-4Fullpage2.html)
-[函数封装](https://wuhanjun.github.io/Learing-Task/otherCarousel/function)
-[对象封装](https://wuhanjun.github.io/Learing-Task/otherCarousel/object.html)
-[立即执行函数封装](https://wuhanjun.github.io/Learing-Task/otherCarousel/immediately-function.html)
-[构造函数轮播封装](https://wuhanjun.github.io/Learing-Task/Object&&Prototype/carousel.html#)
+### 第五种：
+淡入淡出渐变轮播。图片绝对定位，通过jQuery API实现。
 
+### 第六种：
+
+CSS3实现轮播，很好奇。有时间了看看。
 
 ## 遇到的问题：
 
