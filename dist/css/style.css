@@ -1,0 +1,76 @@
+body{
+    height: 100%;
+    overflow: hidden;
+    color:#444444;
+    font-size:13px;
+    background: #f2f2f2;
+    font-family:Arial, Helvetica, sans-serif;
+}
+main{
+    /* The main container */
+    margin:15px auto;
+    width:920px;
+    position:relative;
+
+}
+#slides-wrap {
+    border: 1px solid white;
+    height: 446px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: url(http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/panel.jpg) repeat-x bottom center #ffffff;
+}
+main h1{ font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+    padding: 35px;
+    text-align: center;
+}
+main h2{
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+    top: -19px;
+    text-align: center;
+}
+.single-control {
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+}
+.single-control li{
+    float: left;
+    width: 60px;
+    height: 45px;
+    background: url("http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/divider.png") no-repeat right;
+    text-align: center;
+}
+.single-control li a{
+    padding-top: 10px;
+    display: block;
+}
+.single-control li:hover {
+    background: url("http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/pic_bg.png"), repeat;
+}
+.single-control li.active {
+    background: url('http://cdn.demo.tutorialzine.com/2009/11/beautiful-apple-gallery-slideshow/img/active_bg.png') no-repeat;
+}
+.single-control:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+footer {
+    margin:18px auto 0;
+    width:920px;
+    text-align: center;
+}
+footer p:first-child {
+    margin-bottom: 8px;
+}
+footer p:last-child {
+    font-size: 12px;
+    margin-bottom: 10px;
+}

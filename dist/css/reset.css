@@ -1,0 +1,16 @@
+*, *:before, *:after{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a, a:visited {
+    color:#0196e3;
+    text-decoration:none;
+    outline:none;
+}
+a:hover{
+    text-decoration:underline;
+}

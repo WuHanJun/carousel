@@ -1,0 +1,27 @@
+{
+  "name": "carousel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WuHanJun/carousel.git"
+  },
+  "keywords": [
+    "carousel"
+  ],
+  "author": "wuhanjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WuHanJun/carousel/issues"
+  },
+  "homepage": "https://github.com/WuHanJun/carousel#readme",
+  "dependencies": {
+    "file-loader": "^0.10.0",
+    "normalize.css": "^5.0.0",
+    "webpack": "^2.2.1"
+  }
+}
