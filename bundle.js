@@ -579,7 +579,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
                 $('.img-ct img').eq(temp).siblings().data('show', false);
                 $('.img-ct img').eq(temp).data('show', true);
             } else {
-                console.log(temp);
                 $('.img-ct img').eq(temp).siblings().data('show', false);
                 $('.img-ct img').eq(temp).data('show', true);
             }
